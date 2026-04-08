@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build_meta"
+
+[project]
+name = "email-triage-env"
+version = "0.1.0"
+dependencies = [
+    "openenv-core>=0.2.0",
+]
+
+[project.scripts]
+server = "server.app:main"
